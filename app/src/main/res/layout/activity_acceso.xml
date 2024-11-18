@@ -25,9 +25,9 @@
         android:id="@+id/btnRegistrar"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
         android:onClick="onClickVolver"
         android:text="Volver"
-        android:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -46,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnImagen"
@@ -60,7 +60,35 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickVideo"
+        android:text="Video"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <Button
+        android:id="@+id/btnCrud"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickCrud"
+        android:text="Academia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
+        app:layout_constraintVertical_bias="0.227" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

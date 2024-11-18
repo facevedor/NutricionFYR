@@ -28,6 +28,14 @@ public class AccesoActivity extends AppCompatActivity{
         Intent intent = new Intent(this, ThreadActivity.class);
         startActivity(intent);
     }
+    public void onClickVideo(View view){
+        Intent intent = new Intent(this, VideoActivity.class);
+        startActivity(intent);
+    }
+    public void onClickCrud(View view){
+        Intent intent = new Intent(this, CrudActivity.class);
+        startActivity(intent);
+    }
 }
 
 
