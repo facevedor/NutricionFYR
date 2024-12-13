@@ -36,6 +36,14 @@ public class AccesoActivity extends AppCompatActivity{
         Intent intent = new Intent(this, CrudActivity.class);
         startActivity(intent);
     }
+    public void onClickFirebase(View view){
+        Intent intent = new Intent(this, FirebaseActivity.class);
+        startActivity(intent);
+    }
+    public void onClickMqtt1(View view){
+        Intent intent = new Intent(this, MqttActivity.class);
+        startActivity(intent);
+    }
 }
 
 

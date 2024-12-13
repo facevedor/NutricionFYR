@@ -32,6 +32,9 @@
         <activity android:name=".ThreadActivity"></activity>
         <activity android:name=".VideoActivity"></activity>
         <activity android:name=".CrudActivity"></activity>
+        <activity android:name=".FirebaseActivity"></activity>
+        <activity android:name=".MqttActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

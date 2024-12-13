@@ -7,19 +7,103 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <Button
         android:id="@+id/btnPacientes"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
         android:onClick="onClickVentana"
         android:text="Pacientes"
+        app:layout_constraintBottom_toTopOf="@+id/btnUbicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnUbicacion"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:backgroundTint="@color/blue"
+        android:onClick="onClickUbicacion"
+        android:text="Ubicación"
+        app:layout_constraintBottom_toTopOf="@+id/btnImagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnImagen"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickImagen"
+        android:text="Alimento del dia"
+        app:layout_constraintBottom_toTopOf="@+id/btnVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUbicacion"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickVideo"
+        android:text="Video"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImagen"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnCrud"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickCrud"
+        android:text="Academia"
+        app:layout_constraintBottom_toTopOf="@+id/btnFirebase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideo"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnFirebase"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickFirebase"
+        android:text="Base de Datos"
+        app:layout_constraintBottom_toTopOf="@+id/btnMqtt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrud"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnMqtt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="onClickMqtt1"
+        android:text="MQTT"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFirebase"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -32,63 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPacientes" />
-
-    <Button
-        android:id="@+id/btnUbicacion"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
-        android:onClick="onClickUbicacion"
-        android:text="Ubicación"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnImagen"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
-        android:onClick="onClickImagen"
-        android:text="Alimento del dia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.119" />
-
-    <Button
-        android:id="@+id/btnVideo"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
-        android:onClick="onClickVideo"
-        android:text="Video"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.352" />
-
-    <Button
-        android:id="@+id/btnCrud"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
-        android:onClick="onClickCrud"
-        android:text="Academia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPacientes"
-        app:layout_constraintVertical_bias="0.227" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btnMqtt"
+        android:layout_marginTop="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "25021345451",
+    "project_id": "nutricionryf",
+    "storage_bucket": "nutricionryf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25021345451:android:fe4443f1a3084cb6c591ee",
+        "android_client_info": {
+          "package_name": "com.example.gestionnutricionfr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAThkRIGJlZMNCeK4prioFB-8LIUwEpnzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
